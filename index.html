@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<link href="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+	<style>
+		.page-1{
+			background-color: #48CEFB;
+		}
+		.page-2{
+			background-color: #ED42E8;
+		}
+	</style>
+</head>
+<body>
+
+	<script src="component.js"></script>
+	<script src="./app.js"></script>
+	<script>
+		
+		var h5 = new H5();
+
+		h5
+		.addPage('index page-1')
+			.addComponent('text', {
+				type: 'base',
+				text: 'basecomponent'
+			})
+		.addPage('index page-2')
+			.addComponent('text', {
+				type: 'base',
+				text: 'basecomponent'
+			})
+		.init()
+		
+	</script>
+</body>
+</html>
